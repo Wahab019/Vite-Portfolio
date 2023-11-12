@@ -42,7 +42,7 @@ const Header = () => {
                         </Link>
 
                         <div onClick={()=>setOpen(!open)} className="pc:hidden text-3xl transition-all duration-[1s] desktop:hidden w-[80px] h-[80px] bg-[#55e6a5] flex justify-center items-center cursor-pointer ">
-                            {/* {open ? <AiOutlineClose /> : <RiMenu4Fill />}  */}
+                            
                             <Hamburger />
                         </div>
                         </div>
