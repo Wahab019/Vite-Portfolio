@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: black;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #484a49;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #343534;
+    border-radius: 4px;
+}
+
+/* .container-sample{
+    @apply w-full pr-4 pl-4 mr-auto ml-auto sm:max-w-container-small md:max-w-container-medium lg:max-w-container-big xl:max-w-container-large;
+} */
+
+/* .container-sample-header{
+    @apply w-full mr-auto ml-auto sm:max-w-container-small md:max-w-container-medium lg:max-w-container-big xl:max-w-container-large;
+} */
+
+.navlink{
+    @apply text-white text-[14px] font-medium leading-[12px] py-[32px] px-[20px] tracking-[1px] ;
+}
+
+#home{
+    @apply bg-home-pattern bg-center bg-no-repeat bg-fixed bg-cover h-screen pt-[80px] mobile:h-auto mobile:pb-[80px] tablet:h-auto tablet:pb-[80px] ;
+}
+
+.contact-header{
+    @apply bg-contact-pattern bg-cover bg-no-repeat bg-center mobile:pt-[145px] mobile:pb-[90px] tablet:pt-[165px] tablet:pb-[90px] pc:pt-[195px] pc:pb-[100px] desktop:pt-[240px] desktop:pb-[120px] ;
+}
+
+.form-input{
+    @apply text-[16px] font-light w-[90%] border-b border-solid border-[#333f4d] bg-[#09101a] py-[20px] mt-[45px] outline-none text-white ;
+}
+
+.form-textarea{
+    @apply text-[16px] font-light w-[95%] border-b border-solid border-[#333f4d] bg-[#09101a] py-[20px] mt-[45px] outline-none text-white resize-none ;
+}
+
+.form-submit{
+    @apply w-[95%] mt-[35px] cursor-pointer inline-flex py-[20px] px-[40px] justify-center items-center gap-[10px] bg-[#55e6a5] text-[#02050a] font-medium hover:bg-[#141c27] hover:text-white transition-all duration-[0.3s] ;
+}
+
+.notify-btn{
+    @apply absolute top-[8px] right-[8px] py-[20px] px-[40px] cursor-pointer mobile:py-[20px] mobile:px-[25px] inline-flex justify-center items-center gap-[10px] bg-[#55e6a5] text-[#02050a] font-medium hover:bg-[#141c27] mobile:text-[12px] hover:text-white transition-all w-[30%] duration-[0.3s] ;
+}
+
+.icon-bg{
+    @apply flex justify-center items-center w-[100px] h-[100px] bg-[#55e6a5] rounded-[50%] p-[20px] mr-[35px] desktop:w-[70px] desktop:h-[70px] desktop:mr-[20px] pc:w-[70px] pc:h-[70px] pc:mr-[20px] tablet:block mobile:block mobile:m-0 mobile:mb-[10px] tablet:w-[75px] tablet:h-[75px] mobile:w-[75px] mobile:h-[75px];
+}
+
+.about-text{
+    @apply  relative pl-[130px] pr-[150px] desktop:pl-[145px] desktop:pr-[80px] pc:pl-[90px] pc:pr-0 tablet:px-0 mobile:px-0 ;
+}
+
+.about-img{
+    @apply w-[395px] h-[475px] relative z-[1] mt-[20px] mr-[20px] mb-[50px] ;
+}
+
+.mobile-li{
+    @apply relative flex justify-center items-center text-[#a2a2a2];
+}
+
+.mobile-link{
+    @apply py-[15px] text-white text-[14px] font-medium uppercase leading-[12px] tracking-[1px] ;
+}
+
+.footer-icon{
+    @apply block pc:flex pc:items-center pc:justify-center pc:w-[70px] pc:h-[70px] pc:mr-[20px] desktop:w-[70px] desktop:h-[70px] desktop:mr-[20px] desktop:flex desktop:justify-center desktop:items-center w-[75px] h-[75px] tablet:mr-[35px] rounded-[50%] p-[20px] bg-[#55e6a5]
+     ;
+}
+
+.header-links{
+    @apply text-[18px] mobile:text-[16px] tablet:text-[16px] pc:text-[16px] text-white leading-[15px] inline-block no-underline hover:text-[#55e6a5] transition-all duration-[0.3s] ;
+}
+

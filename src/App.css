@@ -1,0 +1,146 @@
+/* .link{
+    color: transparent;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    outline: none;
+}
+
+.link::before{ 
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: green;
+    transition: 0.5s ease-in-out;
+}
+
+.link1::before{
+    content: "Home";
+}
+.link2::before{
+    content: "About";
+}
+.link3::before{
+    content: "Projects";
+}
+.link4::before{
+    content: "Contact";
+}
+
+.link:hover::before{
+    width: 100%;
+    overflow: hidden;
+    outline: none;
+} */
+
+html{
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+.container-sample{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px){
+    .container-sample {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px){
+    .container-sample {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px){
+    .container-sample{
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container-sample {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px){
+    .container-sample {
+        max-width: 1320px;
+    }
+}
+
+
+.about-text::after{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #a2a2a2;
+}
+
+@media (min-width: 992px) and (max-width: 1199.99px){
+    .about-text::after{
+        width: 75px;
+    }
+}
+
+
+@media (max-width: 991px){
+    .about-text::after {
+        display: none;
+    }
+}
+
+.about-img::after{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    content: "";
+    width: 95%;
+    height: 80%;
+    background-color: #55e6a5;
+    z-index: -1;
+}
+
+
+.first-link::before{
+    width: 5px;
+    height: 5px;
+    border: none;
+    z-index: -1;
+    background-color: #55e6a5;
+    content: "";
+    position: absolute;
+    right: calc(-45px / 2);
+    top: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+}
+  
+.first-link::after{
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: calc(-45px / 2);
+    top: 50%;
+    transform: translate(50%, -50%);
+    border: 2px solid #55e6a5;
+    border-radius: 50%;
+    z-index: -2;
+}
+
+  
+
