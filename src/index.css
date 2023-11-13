@@ -85,3 +85,17 @@
     @apply text-[18px] mobile:text-[16px] tablet:text-[16px] pc:text-[16px] text-white leading-[15px] inline-block no-underline hover:text-[#55e6a5] transition-all duration-[0.3s] ;
 }
 
+.form-input-home{
+    @apply mt-[30px] bg-[#09101a] border border-solid border-[#55e6a5] py-[22px] px-[20px] text-white text-[16px] font-medium w-full outline-none resize-none rounded-none  ;
+}
+
+.form-textarea-home{
+    @apply mt-[30px] bg-[#09101a] border border-solid border-[#55e6a5] py-[22px] px-[20px] text-white text-[16px] font-medium w-full outline-none resize-none rounded-none  ;
+}
+
+.form-submit-home{
+    @apply mt-[25px] bg-[#55e6a5] text-[#02050a] font-medium hover:bg-[#141c27] hover:text-white transition-all duration-[0.3s] py-[20px] px-[40px] cursor-pointer inline-flex justify-center items-center gap-[10px] ;
+}
+
+
+

@@ -142,5 +142,41 @@ html{
     z-index: -2;
 }
 
+.d-and-i span{
+    line-height: unset !important;
+}
+
+@media (min-width: 1200px) and (max-width: 1399.99px){
+    .d-and-i {
+        font-size: 90px !important;
+    }
+
+    .form-container{
+        padding: 40px !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.99px){
+    .d-and-i {
+        font-size: 70px !important;
+    }
+
+    .d-and-i span{
+        font-size: 45px !important;
+        line-height: unset !important;
+    }
+}
+
+@media (max-width: 575.99px){
+    .d-and-i {
+        font-size: 40px !important;
+    }
+
+    .d-and-i span{
+        font-size: 20px !important;
+        line-height: unset !important;
+    }
+}
+
   
 

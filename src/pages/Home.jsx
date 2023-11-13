@@ -4,6 +4,9 @@ import { GrPieChart } from "react-icons/gr";
 // animation
 import useAOS from "../components/useAos";
 
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 const Home = () => {
 
@@ -12,6 +15,20 @@ const Home = () => {
     //onMouseEnter={textEnter} onMouseLeave={textLeave} 
 
     const Aos = useAOS();
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+
+      emailjs.sendForm('service_iw5hv2e', 'template_kbchu7j', form.current, 'WJMXcogEeqnfCUxGn')
+        .then((result) => {
+          alert('Message sent successfully');
+          e.target.reset();
+        }, (error) => {
+          alert(error.message);
+        });
+    };
 
     return ( 
       <div>
@@ -169,11 +186,56 @@ const Home = () => {
         <section className="pt-[135px] pb-[120px] mobile:pt-[40px] mobile:pb-[80px]">
           <div className="container-sample">
             
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-2 tablet:grid-cols-1 mobile:grid-cols-1">
 
-              <div></div>
+              <div>
 
-              <div></div>
+                <div className="mt-[85px] tablet:mt-0 mobile:mt-0">
+                  <h2 className="d-and-i text-[128px] pc:text-[90px] tablet:text-[80px] font-semibold leading-[60px] text-white mb-2.5">
+                    Design <span className="text-[60px] tablet:text-[52px] font-semibold text-white ">and Innovation</span>
+                  </h2>
+                  <p className="mt-[40px] mb-[20px] text-[#a2a2a2] font-normal text-[16px] leading-[1.7]">
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione voluptatem sequi nesciuNeque porro quisquam est, oursqui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam                                   
+                  </p>
+                </div>
+
+                <div>
+                  <div className="grid grid-cols-2 gap-4"></div>
+                </div>
+
+              </div>
+
+              <div>
+                <div className="form-container bg-[#09101a] p-[60px] pc:p-[40px] tablet:mt-[25px] mobile:mt-[25px]">
+
+                  <h2 className="uppercase text-white text-[40px] mobile:text-[28px] mb-[25px] font-medium leading-[1.2] ">
+                    Get in touch
+                  </h2>
+                  <p className="text-[16px] font-normal leading-[1.7] text-[#a2a2a2] mb-2.5">
+                    For your car we will do everything advice design in us repairs and maintenance We are the some preferred.                                   
+                  </p>
+                  <div>
+                    <form ref={form} onSubmit={sendEmail} >
+
+                      <label></label>
+                      <input required placeholder="Your Name" className="form-input-home" type="text" name="user_name" />
+
+                      <label></label>
+                      <input required placeholder="Your Email" className="form-input-home" type="email" name="user_email" />
+
+                      <label></label>
+                      <input placeholder="Phone Number" className="form-input-home" type="tel" name="user_number" />
+
+                      <label></label>
+                      <textarea cols={10} rows={5} placeholder="Message" className="form-textarea-home" type="text" name="message" />
+
+                      <input className="form-submit-home" type="submit" value="submit now" />
+
+                    </form>
+                  </div>
+
+                </div>
+              </div>
 
             </div>
             
@@ -187,3 +249,5 @@ const Home = () => {
 export default Home;
 
 // fade-right
+
+// ref={form} onSubmit={sendEmail}
