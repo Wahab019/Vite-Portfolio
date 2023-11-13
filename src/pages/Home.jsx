@@ -242,12 +242,89 @@ const Home = () => {
           </div>
         </section>
 
+        <section className="pt-[115px] pb-[70px] mobile:pt-[75px] mobile:pb-[30px] bg-[#09101a]">
+          <div className="container-sample">
+
+          <div className="m-auto mb-[60px]">
+              <div className="mb-[40px]">
+                <div className="text-center">
+                  <div data-aos="fade-down">  
+                    <h5 className="text-[20px] font-medium tracking-[1.4px] text-[#55e6a5] mb-[15px]">
+                      EDUCATION & SKILL
+                    </h5>
+                  </div>
+                  <div data-aos="fade-down" className="mb-[10px]">
+                    <h2 className="font-semibold text-white mobile:text-4xl tablet:text-5xl pc:text-[38px] pc:leading-[60px] desktop:text-[48px] desktop:leading-[60px] ">
+                      showcasing your talent
+                    </h2>
+                    <h2 className="font-semibold text-white mobile:text-4xl tablet:text-5xl pc:text-[38px] pc:leading-[60px] desktop:text-[48px] desktop:leading-[60px] ">
+                      amplifying your impact
+                    </h2>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div>
+            <div className="grid grid-cols-2 tablet:grid-cols-1 mobile:grid-cols-1 gap-6 tablet:gap-3 mobile:gap-3">
+
+              <div className="mb-[80px]">
+                <span className="text-[18px] inline-block border border-solid border-[#55e6a5] py-[11px] px-[24px] text-[#55e6a5] font-normal leading-[1.7]">
+                  2014 - 2018
+                </span>
+                <h3 className="text-[30px] font-semibold mt-[20px] mb-[10px] text-white leading-[1.2]">
+                  WordPress and End Developer
+                </h3>
+                <p className="text-[16px] font-medium text-[#a2a2a2] leading-[1.7] mb-[2.5]">
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed thisnquia consequuntur magni dolores eos qui ratione voluptatem                                        
+                </p>
+              </div>
+
+              <div className="mb-[80px]">
+                <span className="text-[18px] inline-block border border-solid border-[#55e6a5] py-[11px] px-[24px] text-[#55e6a5] font-normal leading-[1.7]">
+                  2014 - 2018
+                </span>
+                <h3 className="text-[30px] font-semibold mt-[20px] mb-[10px] text-white leading-[1.2]">
+                  WordPress and End Developer
+                </h3>
+                <p className="text-[16px] font-medium text-[#a2a2a2] leading-[1.7] mb-[2.5]">
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed thisnquia consequuntur magni dolores eos qui ratione voluptatem                                        
+                </p>
+              </div>
+
+              <div className="mb-[80px]">
+                <span className="text-[18px] inline-block border border-solid border-[#55e6a5] py-[11px] px-[24px] text-[#55e6a5] font-normal leading-[1.7]">
+                  2014 - 2018
+                </span>
+                <h3 className="text-[30px] font-semibold mt-[20px] mb-[10px] text-white leading-[1.2]">
+                  WordPress and End Developer
+                </h3>
+                <p className="text-[16px] font-medium text-[#a2a2a2] leading-[1.7] mb-[2.5]">
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed thisnquia consequuntur magni dolores eos qui ratione voluptatem                                        
+                </p>
+              </div>
+
+              <div className="mb-[80px]">
+                <span className="text-[18px] inline-block border border-solid border-[#55e6a5] py-[11px] px-[24px] text-[#55e6a5] font-normal leading-[1.7]">
+                  2014 - 2018
+                </span>
+                <h3 className="text-[30px] font-semibold mt-[20px] mb-[10px] text-white leading-[1.2]">
+                  WordPress and End Developer
+                </h3>
+                <p className="text-[16px] font-medium text-[#a2a2a2] leading-[1.7] mb-[2.5]">
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed thisnquia consequuntur magni dolores eos qui ratione voluptatem                                        
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          </div>
+        </section>
+
       </div>   
     );
 }
  
 export default Home;
 
-// fade-right
-
-// ref={form} onSubmit={sendEmail}
