@@ -424,32 +424,30 @@ const Home = () => {
             </div>
 
             <div>
-              <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))]  items-center gap-[2rem] mt-[50px]">
-
-                <div className="p-[5px] m-auto w-[200px] rounded-[5px] bg-[#55e6a5]">
-                  <div className="grid bg-[#09101a] p-[10px] rounded-[5px] place-items-center h-full">
-                    <p className="text-center text-white">HTML</p>
-                  </div>
-                </div>
-                <div className="p-[5px] m-auto w-[200px] rounded-[5px] bg-[#55e6a5]">
-                  <div className="grid bg-[#09101a] p-[10px] rounded-[5px] place-items-center h-full">
-                    <p className="text-center text-white">HTML</p>
-                  </div>
-                </div>
-                <div className="p-[5px] m-auto w-[200px] rounded-[5px] bg-[#55e6a5]">
-                  <div className="grid bg-[#09101a] p-[10px] rounded-[5px] place-items-center h-full">
-                    <p className="text-center text-white">HTML</p>
-                  </div>
-                </div>
-                <div className="p-[5px] m-auto w-[200px] rounded-[5px] bg-[#55e6a5]">
-                  <div className="grid bg-[#09101a] p-[10px] rounded-[5px] place-items-center h-full">
-                    <p className="text-center text-white">HTML</p>
+              <div className="grid grid-cols-2 tablet:grid-cols-1 mobile:grid-cols-1 gap-4">
+                <div data-aos="zoom-in-up">
+                  <div className="bg-[#151c25] mb-[50px] tablet:mb-[20px] mobile:mb-[20px]">
+                    <p className="py-[15px] pl-[40px] text-white text-[16px] font-normal leading-[1.7] mb-2.5">
+                      HTML
+                    </p>
+                    <div className="bg-[#55e6a5] w-[76%] h-[6px] border-none bg-[0_0] relative">
+                      <span className="bg-[#55e6a5] block w-0 h-full z-[1] relative"></span>
+                    </div>
                   </div>
                 </div>
 
+                <div data-aos="zoom-in-up">
+                  <div className="bg-[#151c25] mb-[50px] tablet:mb-[20px] mobile:mb-[20px]">
+                    <p className="py-[15px] pl-[40px] text-white text-[16px] font-normal leading-[1.7] mb-2.5">
+                      HTML
+                    </p>
+                    <div className="bg-[#55e6a5] w-[76%] h-[6px] border-none bg-[0_0] relative">
+                      <span className="bg-[#55e6a5] block w-0 h-full z-[1] relative"></span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
           </div>
         </section>
       </div>
