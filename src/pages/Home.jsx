@@ -439,9 +439,31 @@ const Home = () => {
                 <div data-aos="zoom-in-up">
                   <div className="bg-[#151c25] mb-[50px] tablet:mb-[20px] mobile:mb-[20px]">
                     <p className="py-[15px] pl-[40px] text-white text-[16px] font-normal leading-[1.7] mb-2.5">
-                      HTML
+                      CSS
                     </p>
-                    <div className="bg-[#55e6a5] w-[76%] h-[6px] border-none bg-[0_0] relative">
+                    <div className="bg-[#55e6a5] w-[60%] h-[6px] border-none bg-[0_0] relative">
+                      <span className="bg-[#55e6a5] block w-0 h-full z-[1] relative"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div data-aos="zoom-in-up">
+                  <div className="bg-[#151c25] mb-[50px] tablet:mb-[20px] mobile:mb-[20px]">
+                    <p className="py-[15px] pl-[40px] text-white text-[16px] font-normal leading-[1.7] mb-2.5">
+                      Java Script
+                    </p>
+                    <div className="bg-[#55e6a5] w-[50%] h-[6px] border-none bg-[0_0] relative">
+                      <span className="bg-[#55e6a5] block w-0 h-full z-[1] relative"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div data-aos="zoom-in-up">
+                  <div className="bg-[#151c25] mb-[50px] tablet:mb-[20px] mobile:mb-[20px]">
+                    <p className="py-[15px] pl-[40px] text-white text-[16px] font-normal leading-[1.7] mb-2.5">
+                      React
+                    </p>
+                    <div className="bg-[#55e6a5] w-[40%] h-[6px] border-none bg-[0_0] relative">
                       <span className="bg-[#55e6a5] block w-0 h-full z-[1] relative"></span>
                     </div>
                   </div>
