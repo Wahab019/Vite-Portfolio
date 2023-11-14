@@ -426,7 +426,7 @@ const Home = () => {
             <div>
               <div className="grid grid-cols-2 tablet:grid-cols-1 mobile:grid-cols-1 gap-4">
                 <div data-aos="zoom-in-up">
-                  <div className="bg-[#151c25] mb-[50px] tablet:mb-[20px] mobile:mb-[20px]">
+                  <div className="bg-[#151c25] mb-[50px] tablet:mb-[20px] mobile:mb-[40px]">
                     <p className="py-[15px] pl-[40px] text-white text-[16px] font-normal leading-[1.7] mb-2.5">
                       HTML
                     </p>
@@ -437,7 +437,7 @@ const Home = () => {
                 </div>
 
                 <div data-aos="zoom-in-up">
-                  <div className="bg-[#151c25] mb-[50px] tablet:mb-[20px] mobile:mb-[20px]">
+                  <div className="bg-[#151c25] mb-[50px] tablet:mb-[20px] mobile:mb-[40px]">
                     <p className="py-[15px] pl-[40px] text-white text-[16px] font-normal leading-[1.7] mb-2.5">
                       CSS
                     </p>
@@ -448,7 +448,7 @@ const Home = () => {
                 </div>
 
                 <div data-aos="zoom-in-up">
-                  <div className="bg-[#151c25] mb-[50px] tablet:mb-[20px] mobile:mb-[20px]">
+                  <div className="bg-[#151c25] mb-[50px] tablet:mb-[20px] mobile:mb-[40px]">
                     <p className="py-[15px] pl-[40px] text-white text-[16px] font-normal leading-[1.7] mb-2.5">
                       Java Script
                     </p>
@@ -459,7 +459,7 @@ const Home = () => {
                 </div>
 
                 <div data-aos="zoom-in-up">
-                  <div className="bg-[#151c25] mb-[50px] tablet:mb-[20px] mobile:mb-[20px]">
+                  <div className="bg-[#151c25] mb-[50px] tablet:mb-[20px] mobile:mb-[40px]">
                     <p className="py-[15px] pl-[40px] text-white text-[16px] font-normal leading-[1.7] mb-2.5">
                       React
                     </p>
