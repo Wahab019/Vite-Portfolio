@@ -19,9 +19,9 @@ const Header = () => {
 
     let Links=[
         {name:"HOME",link:"/"},
-        {name:"ABOUT",link:"#about"},
-        {name:"SERVICES",link:"#services"},
-        {name:"PROJECTS",link:"#projects"},
+        {name:"ABOUT",link:"/#about"},
+        {name:"SERVICES",link:"/#services"},
+        {name:"PROJECTS",link:"/#projects"},
         {name:"BLOG",link:"/"},
         {name:"CONTACT",link:"/contact"},
     ];
