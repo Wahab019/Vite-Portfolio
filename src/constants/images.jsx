@@ -4,7 +4,8 @@
     
     import homeSec1img1 from "../assets/img/homeSec1img1.jpg";
     
-    import projectone from "../assets/img/projectone.png";
+    import dangoteClone from "../assets/img/dangote-clone.png";
+    import uxCourse from "../assets/img/ux-course.png";
 
     import footer1 from "../assets/img/footer-icon1.svg";
     import footer2 from "../assets/img/footer-icon2.svg";
@@ -19,7 +20,8 @@ const images = {
  // Home Page
   wahabLogo,
   homeSec1img1,
-  projectone,
+  dangoteClone,
+  uxCourse,
 
   footer1,
   footer2,
