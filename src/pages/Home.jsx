@@ -11,8 +11,7 @@ import emailjs from '@emailjs/browser';
 const Home = () => {
 
     
-
-    //onMouseEnter={textEnter} onMouseLeave={textLeave} 
+  // Leave={textLeave} 
 
     const Aos = useAOS();
 
