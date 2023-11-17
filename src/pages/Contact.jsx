@@ -1,7 +1,11 @@
 import React, { useRef, useEffect, useState } from "react";
-import emailjs from "@emailjs/browser";
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+
+// emailjs
+import emailjs from "@emailjs/browser";
+
+// framer motion
+import { motion } from "framer-motion";
 
 // animation
 import useAOS from "../components/useAos";
