@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 // images
 import { images } from "../constants";
@@ -12,7 +12,51 @@ import useAOS from "../components/useAos";
 // emailjs
 import emailjs from "@emailjs/browser";
 
+// framer motion
+import { motion } from 'framer-motion';
+
 const Home = () => {
+
+  const [mousePosition, setMousePosition] = useState({
+    x: 0,
+    y: 0,
+  });
+  const [cursorVariant, setCursorVariant] = useState("default");
+
+  useEffect(() => {
+    const mouseMove = (e) => {
+      setMousePosition({
+        x: e.clientX,
+        y: e.clientY,
+      });
+    };
+
+    window.addEventListener("mousemove", mouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", mouseMove);
+    };
+  }, []);
+
+  const variants = {
+    default: {
+      x: mousePosition.x - 15,
+      y: mousePosition.y - 15,
+      border: "2px solid white",
+    },
+    text: {
+      height: 80,
+      width: 80,
+      x: mousePosition.x - 40,
+      y: mousePosition.y - 40,
+      backgroundColor: "#2d333a33",
+      mixBlendMode: "difference",
+    },
+  };
+
+  const textEnter = () => setCursorVariant("text");
+  const textLeave = () => setCursorVariant("default");
+
   const Aos = useAOS();
 
   const form = useRef();
@@ -40,6 +84,12 @@ const Home = () => {
 
   return (
     <div>
+      <motion.div
+        className="bg-transparent h-[30px] z-[1000] w-[30px] rounded-[50%] fixed top-0 left-0 pointer-events-none"
+        variants={variants}
+        animate={cursorVariant}
+      />
+
       <section id="home" className="">
         <div className="container-sample h-full">
           <div className=" h-full flex flex-col justify-center mb-[35px] tablet:mb-0 tablet:mt-[50px] mobile:mb-0 mobile:mt-[50px]">
@@ -57,6 +107,8 @@ const Home = () => {
                   interfaces that captivate and engage.
                 </p>
                 <a
+                  onMouseEnter={textEnter}
+                  onMouseLeave={textLeave}
                   href={images.my_cv}
                   download
                   className="inline-flex py-[20px] px-[40px] bg-[#55e6a5] mobile:w-[90%] w-[40%] justify-center items-center gap-[10px] text-[#02050a] font-medium transition-all duration-[0.3s] hover:bg-[#141c27] hover:text-white"
@@ -239,6 +291,8 @@ const Home = () => {
                   eos designer heresm qui ratione
                 </p>
                 <a
+                  onMouseEnter={textEnter}
+                  onMouseLeave={textLeave}
                   href={images.my_cv}
                   download
                   className="inline-flex py-[20px] px-[40px] bg-[#55e6a5] justify-center items-center gap-[10px] text-[#02050a] font-medium transition-all duration-[0.3s] hover:bg-[#141c27] hover:text-white"
@@ -247,19 +301,6 @@ const Home = () => {
                 </a>
               </div>
             </div>
-
-            {/* <div>
-                <div data-aos="fade-left" className="about-img">
-                  <img className="h-auto w-full max-w-full border-none rounded-none" src={images.greybg} alt="" />
-                  <div className="bg-[#232323] py-[15px] px-[30px] inline-flex flex-wrap justify-center items-center relative top-[-45px] left-[50px]">
-                    <i className="w-[65px] bg-[#fff1] leading-[65px] rounded-[50%] text-[40px] mr-[10px] h-[65px] flex items-center justify-center "><GrPieChart /></i>
-                    <div>
-                      <h4 className="text-[16px] text-white font-semibold ">Daily Activity</h4>
-                      <p className="text-[16px] font-normal leading-[1.7] text-[#a2a2a2] mb-2.5">Loream is ispam</p>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
           </div>
         </div>
       </section>
@@ -337,6 +378,8 @@ const Home = () => {
                     />
 
                     <input
+                      onMouseEnter={textEnter}
+                      onMouseLeave={textLeave}
                       className="form-submit-home"
                       type="submit"
                       value="submit now"

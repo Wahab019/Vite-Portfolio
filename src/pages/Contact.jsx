@@ -10,8 +10,6 @@ import { motion } from "framer-motion";
 // animation
 import useAOS from "../components/useAos";
 
-// import Mouse from '../components/Mouse';
-
 const Contact = () => {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -80,7 +78,6 @@ const Contact = () => {
 
   return (
     <div>
-      {/* <Mouse /> */}
 
       <motion.div
         className="bg-transparent h-[30px] w-[30px] z-50 rounded-[50%] fixed top-0 left-0 pointer-events-none"
@@ -97,12 +94,22 @@ const Contact = () => {
 
             <ul className="flex flex-wrap justify-end text-[#a2a2a2]">
               <li className="first-link mr-[45px] text-white text-[20px] font-medium relative z-[1]">
-                <Link to={"/"} className="header-links">
+                <Link
+                  to={"/"}
+                  onMouseEnter={textEnter}
+                  onMouseLeave={textLeave}
+                  className="header-links"
+                >
                   Home
                 </Link>
               </li>
               <li className=" text-white text-[20px] font-medium relative z-[1]">
-                <Link to={"/contact"} className="header-links">
+                <Link
+                  to={"/contact"}
+                  onMouseEnter={textEnter}
+                  onMouseLeave={textLeave}
+                  className="header-links"
+                >
                   Contact
                 </Link>
               </li>
@@ -193,6 +200,8 @@ const Contact = () => {
                       />
 
                       <input
+                        onMouseEnter={textEnter}
+                        onMouseLeave={textLeave}
                         className="form-submit"
                         type="submit"
                         value="submit now"
@@ -248,6 +257,8 @@ const Contact = () => {
                     />
                   </span>
                   <input
+                    onMouseEnter={textEnter}
+                    onMouseLeave={textLeave}
                     className="notify-btn"
                     value="Notify Now"
                     type="submit"
@@ -263,5 +274,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-// onMouseEnter={textEnter} onMouseLeave={textLeave}

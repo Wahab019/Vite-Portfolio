@@ -13,8 +13,6 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 // animation
 import useAOS from "../components/useAos";
 
-// import React from 'react';
-
 const Footer = () => {
 
   // go-to-top

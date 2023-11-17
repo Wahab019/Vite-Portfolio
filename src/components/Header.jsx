@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 // images
 import { images } from "../constants";
 
-import { motion } from "framer-motion";
-
 // hamburger
 import Hamburger from "hamburger-react";
 
@@ -17,7 +15,6 @@ const Header = () => {
     { name: "ABOUT", link: "/#about", title: "About" },
     { name: "SERVICES", link: "/#services", title: "Services" },
     { name: "PROJECTS", link: "/#projects", title: "Projects" },
-    // { name: "BLOG", link: "/", title: "Blog" },
     { name: "CONTACT", link: "/contact", title: "Contact" },
   ];
 
