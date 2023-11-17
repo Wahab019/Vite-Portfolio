@@ -6,6 +6,8 @@
     
     import dangoteClone from "../assets/img/dangote-clone.png";
     import uxCourse from "../assets/img/ux-course.png";
+    import bootstrapPortfolio from "../assets/img/bootstrap-portfolio.png";
+    import wahabPortfolio from "../assets/img/wahab-portfolio.png";
 
     import footer1 from "../assets/img/footer-icon1.svg";
     import footer2 from "../assets/img/footer-icon2.svg";
@@ -22,6 +24,8 @@ const images = {
   homeSec1img1,
   dangoteClone,
   uxCourse,
+  bootstrapPortfolio,
+  wahabPortfolio,
 
   footer1,
   footer2,
