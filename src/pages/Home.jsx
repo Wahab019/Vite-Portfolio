@@ -108,7 +108,7 @@ const Home = () => {
                   specialize in translating complex ideas into user-friendly
                   interfaces that captivate and engage.
                 </p>
-                <ul className="flex list-none items-center gap-[3rem] text-[#7a7a7a]">
+                <ul className="flex list-none items-center mobile:gap-[2rem] gap-[3rem] text-[#7a7a7a]">
                   <li>
                     <a
                       className="text-[2.4rem]  inline-block ease-in-out duration-[0.3s] delay-0 hover:translate-y-[-5px] hover:text-[#55e6a5]"
