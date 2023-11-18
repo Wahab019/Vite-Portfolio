@@ -159,17 +159,17 @@ const Home = () => {
               </div>
               <div data-aos="fade-down" className="mb-[10px]">
                 <h2 className="font-semibold text-white mobile:text-4xl tablet:text-5xl pc:text-[38px] pc:leading-[60px] desktop:text-[48px] desktop:leading-[60px] ">
-                  Crafting stories through
+                  Crafting Solutions with
                 </h2>
                 <h2 className="font-semibold text-white mobile:text-4xl tablet:text-5xl pc:text-[38px] pc:leading-[60px] desktop:text-[48px] desktop:leading-[60px] ">
-                  design and innovation
+                  Creativity and Precision
                 </h2>
               </div>
             </div>
           </div>
 
           <div className="grid grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1 gap-4">
-            <div>
+            <div className="transform ease-out transition hover:scale-105 duration-[0.3s]">
               <div className="relative px-[40px] pb-[40px] mt-[62px] border-[3px] border-[#191919] border-solid">
                 <span className="block text-center my-0 mx-auto top-[-46px] w-[100px] relative">
                   <svg
@@ -204,7 +204,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div>
+            <div className="transform ease-out transition hover:scale-105 duration-[0.3s]">
               <div className="relative px-[40px] pb-[40px] mt-[62px] border-[3px] border-[#191919] border-solid">
                 <span className="block text-center my-0 mx-auto top-[-46px] w-[100px] relative">
                   <svg
@@ -243,7 +243,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div>
+            <div className="transform ease-out transition hover:scale-105 duration-[0.3s]">
               <div className="relative px-[40px] pb-[40px] mt-[62px] border-[3px] border-[#191919] border-solid">
                 <span className="block text-center my-0 mx-auto top-[-46px] w-[100px] relative">
                   <svg

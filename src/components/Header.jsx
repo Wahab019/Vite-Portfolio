@@ -8,7 +8,7 @@ import { images } from "../constants";
 import Hamburger from "hamburger-react";
 
 const Header = () => {
-
+  
   // nav-links
   let Links = [
     { name: "HOME", link: "/", title: "Home" },
@@ -43,7 +43,7 @@ const Header = () => {
             </div>
 
             <ul
-              className={` mobile:border-t pc:ml-[18%] desktop:ml-[35%] items-end bg-[#09101a]  absolute desktop:static w-full pc:static z-[1000] mobile:border-b tablet:border-t tablet:border-b border-solid border-t-[#55e6a5] flex-wrap border-b-[#55e6a5] pc:flex tablet:block mobile:block desktop:flex  transition-all duration-[0.4s] ease-in ${
+              className={`mobile:border-t pc:ml-[18%] desktop:ml-[35%] items-end bg-[#09101a]  absolute desktop:static w-full pc:static z-[1000] mobile:border-b tablet:border-t tablet:border-b border-solid border-t-[#55e6a5] flex-wrap border-b-[#55e6a5] pc:flex tablet:block mobile:block desktop:flex  transition-all duration-[0.4s] ease-in ${
                 open ? "left-0" : "right-[-1200px]"
               } `}
             >
