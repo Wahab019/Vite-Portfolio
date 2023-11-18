@@ -43,7 +43,7 @@ const Footer = () => {
 
   return (
     <div>
-      <section className="pt-[120px] tablet:pt-[80px] mobile:pt-[80px]">
+      <section className="pt-[120px] bg-[#09101a] tablet:pt-[80px] mobile:pt-[80px]">
         <div className="container-sample">
           <div className="grid grid-cols-1 pc:grid-cols-3 desktop:grid-cols-3 pc:gap-[5px] desktop:gap-[5px] gap-[50px] ">
             <div>
