@@ -80,7 +80,7 @@ const Contact = () => {
     <div>
 
       <motion.div
-        className="bg-transparent h-[30px] w-[30px] z-50 rounded-[50%] fixed top-0 left-0 pointer-events-none"
+        className="bg-transparent h-[30px] tablet:hidden mobile:hidden w-[30px] z-50 rounded-[50%] fixed top-0 left-0 pointer-events-none"
         variants={variants}
         animate={cursorVariant}
       />

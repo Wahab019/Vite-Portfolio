@@ -87,7 +87,7 @@ const Home = () => {
   return (
     <div>
       <motion.div
-        className="bg-transparent h-[30px] z-[1000] w-[30px] rounded-[50%] fixed top-0 left-0 pointer-events-none"
+        className="bg-transparent tablet:hidden mobile:hidden h-[30px] z-[1000] w-[30px] rounded-[50%] fixed top-0 left-0 pointer-events-none"
         variants={variants}
         animate={cursorVariant}
       />
