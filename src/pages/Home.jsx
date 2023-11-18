@@ -5,6 +5,8 @@ import { images } from "../constants";
 
 // icons
 import { HiDownload } from "react-icons/hi";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 // animation
 import useAOS from "../components/useAos";
@@ -106,7 +108,7 @@ const Home = () => {
                   specialize in translating complex ideas into user-friendly
                   interfaces that captivate and engage.
                 </p>
-                <a
+                {/* <a
                   onMouseEnter={textEnter}
                   onMouseLeave={textLeave}
                   href={images.my_cv}
@@ -114,7 +116,33 @@ const Home = () => {
                   className="inline-flex py-[20px] px-[40px] bg-[#55e6a5] mobile:w-[90%] w-[40%] justify-center items-center gap-[10px] text-[#02050a] font-medium transition-all duration-[0.3s] hover:bg-[#141c27] hover:text-white"
                 >
                   Download Cv <HiDownload />
-                </a>
+                </a> */}
+                <ul className="flex list-none items-center gap-[3rem] text-[#7a7a7a]">
+                  <li>
+                    <a
+                      className="text-[2.4rem]  inline-block ease-in-out duration-[0.3s] delay-0 hover:translate-y-[-5px] hover:text-[#55e6a5]"
+                      href="https://www.linkedin.com/in/abdulwahab-lawal-0957a3286"
+                    >
+                      <FaLinkedin />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="text-[2.4rem]  inline-block ease-in-out duration-[0.3s] delay-0 hover:translate-y-[-5px] hover:text-[#55e6a5]"
+                      href="http://github.com/Wahab019"
+                    >
+                      <FaGithub />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="text-[2.4rem]  inline-block ease-in-out duration-[0.3s] delay-0 hover:translate-y-[-5px] hover:text-[#55e6a5]"
+                      href="http://twitter.com/theboyAA"
+                    >
+                      <FaXTwitter />
+                    </a>
+                  </li>
+                </ul>
               </div>
 
               <div className="tablet:hidden mobile:hidden"></div>
