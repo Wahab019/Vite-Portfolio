@@ -331,7 +331,7 @@ const Home = () => {
             </div>
 
             <div>
-              <div className="form-container bg-[#09101a] p-[60px] pc:p-[40px] tablet:mt-[25px] mobile:mt-[25px]">
+              <div className="form-container bg-[#09101a] p-[60px] mobile:p-[30px] pc:p-[40px] tablet:mt-[25px] mobile:mt-[25px]">
                 <h2 className="uppercase text-white text-[40px] mobile:text-[28px] mb-[25px] font-medium leading-[1.2] ">
                   Get in touch
                 </h2>
