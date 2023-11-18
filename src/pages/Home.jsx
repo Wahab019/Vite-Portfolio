@@ -108,15 +108,6 @@ const Home = () => {
                   specialize in translating complex ideas into user-friendly
                   interfaces that captivate and engage.
                 </p>
-                {/* <a
-                  onMouseEnter={textEnter}
-                  onMouseLeave={textLeave}
-                  href={images.my_cv}
-                  download
-                  className="inline-flex py-[20px] px-[40px] bg-[#55e6a5] mobile:w-[90%] w-[40%] justify-center items-center gap-[10px] text-[#02050a] font-medium transition-all duration-[0.3s] hover:bg-[#141c27] hover:text-white"
-                >
-                  Download Cv <HiDownload />
-                </a> */}
                 <ul className="flex list-none items-center gap-[3rem] text-[#7a7a7a]">
                   <li>
                     <a
