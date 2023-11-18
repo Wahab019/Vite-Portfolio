@@ -111,6 +111,8 @@ const Home = () => {
                 <ul className="flex list-none items-center mobile:gap-[2rem] gap-[3rem] text-[#7a7a7a]">
                   <li>
                     <a
+                      onMouseEnter={textEnter}
+                      onMouseLeave={textLeave}
                       className="text-[2.4rem]  inline-block ease-in-out duration-[0.3s] delay-0 hover:translate-y-[-5px] hover:text-[#55e6a5]"
                       href="https://www.linkedin.com/in/abdulwahab-lawal-0957a3286"
                     >
@@ -119,6 +121,8 @@ const Home = () => {
                   </li>
                   <li>
                     <a
+                      onMouseEnter={textEnter}
+                      onMouseLeave={textLeave}
                       className="text-[2.4rem]  inline-block ease-in-out duration-[0.3s] delay-0 hover:translate-y-[-5px] hover:text-[#55e6a5]"
                       href="http://github.com/Wahab019"
                     >
@@ -127,6 +131,8 @@ const Home = () => {
                   </li>
                   <li>
                     <a
+                      onMouseEnter={textEnter}
+                      onMouseLeave={textLeave}
                       className="text-[2.4rem]  inline-block ease-in-out duration-[0.3s] delay-0 hover:translate-y-[-5px] hover:text-[#55e6a5]"
                       href="http://twitter.com/theboyAA"
                     >
