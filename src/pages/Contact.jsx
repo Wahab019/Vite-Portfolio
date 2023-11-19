@@ -84,7 +84,7 @@ const Contact = () => {
         variants={variants}
         animate={cursorVariant}
       />
-
+      {/* contact page header */}
       <section className="contact-header">
         <div className="container-sample">
           <div className="flex justify-between flex-wrap items-center gap-[15px]">
@@ -117,7 +117,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-
+      {/* contact form and map */}
       <section className="py-[80px]">
         <div className="container-sample">
           <div>
@@ -138,6 +138,7 @@ const Contact = () => {
             </div>
 
             <div className="grid grid-cols-[66.66%_32%] tablet:grid-cols-1 mobile:grid-cols-1 gap-3 tablet:gap-4 mobile:gap-4">
+              {/* form */}
               <div className="">
                 <form
                   ref={form}
@@ -210,7 +211,7 @@ const Contact = () => {
                   </div>
                 </form>
               </div>
-
+              {/* map */}
               <div className="">
                 <div className="w-full h-full">
                   <div className="mapouter relative text-center max-w-full h-[571px] tablet:h-[400px] mobile:h-[300px]">
@@ -235,7 +236,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-
+      {/* newsletter */}
       <section className="bg-subscibe-pattern bg-center bg-fixed bg-cover">
         <div className="bg-[#000000e3] pt-[115px] pb-[120px] mobile:pt-[75px] mobile:pb-[80px]">
           <div className="container-sample">

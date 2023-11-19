@@ -78,10 +78,10 @@ const Footer = () => {
                     Lets Talk
                   </h3>
                   <p className="text-[16px] mb-[10px] font-semibold leading-[1.2] text-[#7A7A7A]">
-                    09065816860
+                    +234 906 581 6860
                   </p>
                   <p className="text-[16px] mb-[10px] font-semibold leading-[1.2] text-[#7A7A7A]">
-                    09065816860
+                    +234 916 122 3289
                   </p>
                 </div>
               </div>

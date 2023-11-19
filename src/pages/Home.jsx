@@ -434,10 +434,10 @@ const Home = () => {
                 </div>
                 <div data-aos="fade-down" className="mb-[10px]">
                   <h2 className="font-semibold text-white mobile:text-4xl tablet:text-5xl pc:text-[38px] pc:leading-[60px] desktop:text-[48px] desktop:leading-[60px] ">
-                    showcasing your talent
+                    unveiling expertise
                   </h2>
                   <h2 className="font-semibold text-white mobile:text-4xl tablet:text-5xl pc:text-[38px] pc:leading-[60px] desktop:text-[48px] desktop:leading-[60px] ">
-                    amplifying your impact
+                    crafting a path forward
                   </h2>
                 </div>
               </div>
@@ -446,31 +446,28 @@ const Home = () => {
 
           <div>
             <div className="grid grid-cols-2 tablet:grid-cols-1 mobile:grid-cols-1 gap-6 tablet:gap-3 mobile:gap-3">
+              {/* Front end dev */}
               <div className="mb-[80px]">
                 <span className="text-[18px] inline-block border border-solid border-[#55e6a5] py-[11px] px-[24px] text-[#55e6a5] font-normal leading-[1.7]">
-                  2021 - Present
+                  2023 - Present
                 </span>
                 <h3 className="text-[30px] font-semibold mt-[20px] mb-[10px] text-white leading-[1.2]">
                   Front End Developer
                 </h3>
                 <p className="text-[16px] font-medium text-[#a2a2a2] leading-[1.7] mb-[2.5]">
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                  odit aut fugit sed thisnquia consequuntur magni dolores eos
-                  qui ratione voluptatem
+                  Front-end Web Develoment, Duromedia Academy.
                 </p>
               </div>
-
+              {/* ECE */}
               <div className="mb-[80px]">
                 <span className="text-[18px] inline-block border border-solid border-[#55e6a5] py-[11px] px-[24px] text-[#55e6a5] font-normal leading-[1.7]">
-                  2014 - 2018
+                  2021 - Present
                 </span>
                 <h3 className="text-[30px] font-semibold mt-[20px] mb-[10px] text-white leading-[1.2]">
-                  WordPress and End Developer
+                  Electronic & Computer Engineering
                 </h3>
                 <p className="text-[16px] font-medium text-[#a2a2a2] leading-[1.7] mb-[2.5]">
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                  odit aut fugit sed thisnquia consequuntur magni dolores eos
-                  qui ratione voluptatem
+                  Currently studying ECE at Lagos State University.
                 </p>
               </div>
             </div>
@@ -478,6 +475,7 @@ const Home = () => {
 
           <div>
             <div className="grid grid-cols-2 tablet:grid-cols-1 mobile:grid-cols-1 gap-4">
+              {/* html */}
               <div data-aos="zoom-in-up">
                 <div className="bg-[#151c25] mb-[50px] tablet:mb-[20px] mobile:mb-[40px]">
                   <p className="py-[15px] pl-[40px] text-white text-[16px] font-normal leading-[1.7] mb-2.5">
@@ -488,7 +486,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-
+              {/* css */}
               <div data-aos="zoom-in-up">
                 <div className="bg-[#151c25] mb-[50px] tablet:mb-[20px] mobile:mb-[40px]">
                   <p className="py-[15px] pl-[40px] text-white text-[16px] font-normal leading-[1.7] mb-2.5">
@@ -499,7 +497,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-
+              {/* js */}
               <div data-aos="zoom-in-up">
                 <div className="bg-[#151c25] mb-[50px] tablet:mb-[20px] mobile:mb-[40px]">
                   <p className="py-[15px] pl-[40px] text-white text-[16px] font-normal leading-[1.7] mb-2.5">
@@ -510,7 +508,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-
+              {/* react */}
               <div data-aos="zoom-in-up">
                 <div className="bg-[#151c25] mb-[50px] tablet:mb-[20px] mobile:mb-[40px]">
                   <p className="py-[15px] pl-[40px] text-white text-[16px] font-normal leading-[1.7] mb-2.5">
@@ -521,7 +519,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-
+              {/* tailwind */}
               <div data-aos="zoom-in-up">
                 <div className="bg-[#151c25] mb-[50px] tablet:mb-[20px] mobile:mb-[40px]">
                   <p className="py-[15px] pl-[40px] text-white text-[16px] font-normal leading-[1.7] mb-2.5">
@@ -532,7 +530,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-
+              {/* git */}
               <div data-aos="zoom-in-up">
                 <div className="bg-[#151c25] mb-[50px] tablet:mb-[20px] mobile:mb-[40px]">
                   <p className="py-[15px] pl-[40px] text-white text-[16px] font-normal leading-[1.7] mb-2.5">
@@ -567,14 +565,18 @@ const Home = () => {
           </div>
 
           <div>
+            {/* dangote clone */}
             <div className="flex justify-center items-center my-[2.5rem]  w-full  mobile:flex-col mobile:text-center">
               <div className="holder w-[30rem] flex-[1] max-w-[40%] mr-[10%] max-h-[40%] relative mobile:max-w-[90%] mobile:my-0 mobile:mx-[10%]">
+                {/* project image */}
                 <img
                   className="test-image"
                   src={images.dangoteClone}
                   alt="dangote Website Clone"
                 />
+                {/* image overlay */}
                 <div className="overlay absolute top-0 left-0 w-full h-full">
+                  {/* project link */}
                   <div className="content1">
                     <div class="overlay-icon">
                       <a
@@ -596,6 +598,7 @@ const Home = () => {
                       </a>
                     </div>
                   </div>
+                  {/* github link */}
                   <div className="content2">
                     <div class="overlay-icon">
                       <a href="https://github.com/Duromedia-Academy/Cohort3-q2-project-2023">
@@ -615,7 +618,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-
+              {/* project description */}
               <div className="flex-[1] ">
                 <h2 className="text-white my-[1rem] mobile:text-[1.2rem] text-[2rem] leading-[2.5rem] font-semibold uppercase">
                   Dangote Clone
@@ -626,15 +629,18 @@ const Home = () => {
                 </p>
               </div>
             </div>
-
+            {/* ux course */}
             <div className="flex justify-center items-center my-[2.5rem]  w-full  mobile:flex-col mobile:text-center">
               <div className="holder w-[30rem] flex-[1] max-w-[40%] mr-[10%] max-h-[40%] relative mobile:max-w-[90%] mobile:my-0 mobile:mx-[10%]">
+                {/* project image */}
                 <img
                   className="test-image"
                   src={images.uxCourse}
                   alt="UX Course Template"
                 />
+                {/* image overlay */}
                 <div className="overlay absolute top-0 left-0 w-full h-full">
+                  {/* project link */}
                   <div className="content1">
                     <div class="overlay-icon">
                       <a
@@ -656,6 +662,7 @@ const Home = () => {
                       </a>
                     </div>
                   </div>
+                  {/* github link */}
                   <div className="content2">
                     <div class="overlay-icon">
                       <a href="https://github.com/Wahab019/UX-Design-Course">
@@ -675,7 +682,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-
+              {/* project description */}
               <div className="flex-[1] ">
                 <h2 className="text-white my-[1rem] mobile:text-[1.2rem] text-[2rem] leading-[2.5rem] font-semibold uppercase">
                   UX WEB COURSE
@@ -685,15 +692,18 @@ const Home = () => {
                 </p>
               </div>
             </div>
-
+            {/* bootstrap portfolio */}
             <div className="flex justify-center items-center my-[2.5rem]  w-full  mobile:flex-col mobile:text-center">
               <div className="holder w-[30rem] flex-[1] max-w-[40%] mr-[10%] max-h-[40%] relative mobile:max-w-[90%] mobile:my-0 mobile:mx-[10%]">
+                {/* project image */}
                 <img
                   className="test-image"
                   src={images.bootstrapPortfolio}
                   alt="Bootstrap Portfolio Template"
                 />
+                {/* image overlay */}
                 <div className="overlay absolute top-0 left-0 w-full h-full">
+                  {/* project link */}
                   <div className="content1">
                     <div class="overlay-icon">
                       <a
@@ -715,6 +725,7 @@ const Home = () => {
                       </a>
                     </div>
                   </div>
+                  {/* github link */}
                   <div className="content2">
                     <div class="overlay-icon">
                       <a href="https://github.com/Wahab019/bootstrap-portfolio">
@@ -734,7 +745,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-
+              {/* project description */}
               <div className="flex-[1] ">
                 <h2 className="text-white my-[1rem] mobile:text-[1.2rem] text-[2rem] leading-[2.5rem] font-semibold uppercase">
                   PORTFOLIO TEMPLATE
@@ -745,15 +756,18 @@ const Home = () => {
                 </p>
               </div>
             </div>
-
+            {/* my portfolio */}
             <div className="flex justify-center items-center my-[2.5rem]  w-full  mobile:flex-col mobile:text-center">
               <div className="holder w-[30rem] flex-[1] max-w-[40%] mr-[10%] max-h-[40%] relative mobile:max-w-[90%] mobile:my-0 mobile:mx-[10%]">
+                {/* project image */}
                 <img
                   className="test-image"
                   src={images.wahabPortfolio}
                   alt="Wahab Portfolio"
                 />
+                {/* image overlay */}
                 <div className="overlay absolute top-0 left-0 w-full h-full">
+                  {/* project link */}
                   <div className="content1">
                     <div class="overlay-icon">
                       <a
@@ -775,6 +789,7 @@ const Home = () => {
                       </a>
                     </div>
                   </div>
+                  {/* github link */}
                   <div className="content2">
                     <div class="overlay-icon">
                       <a href="https://github.com/Wahab019/Vite-Portfolio">
@@ -794,7 +809,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-
+              {/* project description */}
               <div className="flex-[1] ">
                 <h2 className="text-white my-[1rem] mobile:text-[1.2rem] text-[2rem] leading-[2.5rem] font-semibold uppercase">
                   MY PORTFOLIO
