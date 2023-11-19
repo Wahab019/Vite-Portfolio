@@ -92,6 +92,7 @@ const Home = () => {
         animate={cursorVariant}
       />
 
+      {/* Home */}
       <section id="home" className="">
         <div className="container-sample h-full">
           <div className=" h-full flex flex-col justify-center mb-[35px] tablet:mb-0 tablet:mt-[50px] mobile:mb-0 mobile:mt-[50px]">
@@ -147,7 +148,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-
+      {/* Services */}
       <section id="services" className="pt-[130px] mobile:pt-[80px]">
         <div className="container-sample">
           <div className="m-auto mb-[40px]">
@@ -169,6 +170,7 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-3 tablet:grid-cols-2 mobile:grid-cols-1 gap-4">
+            {/* Web Design */}
             <div className="transform ease-out transition hover:scale-105 duration-[0.3s]">
               <div className="relative px-[40px] pb-[40px] mt-[62px] border-[3px] border-[#191919] border-solid">
                 <span className="block text-center my-0 mx-auto top-[-46px] w-[100px] relative">
@@ -197,13 +199,13 @@ const Home = () => {
                   Website Design
                 </h3>
                 <p className="text-center text-[16px] font-medium leading-[28px] text-[#a2a2a2] mb-2.5">
-                  Nemo design enim ipsam voluptatem quim voluptas sit
-                  aspernaturaut odit auting fugit sed thisnquia consequuntur
-                  magni doloreseos designer heresm qui
+                  Creating visually appealing, user-friendly websites using
+                  layout, typography, graphics, and responsive design
+                  techniques.
                 </p>
               </div>
             </div>
-
+            {/* Personal website */}
             <div className="transform ease-out transition hover:scale-105 duration-[0.3s]">
               <div className="relative px-[40px] pb-[40px] mt-[62px] border-[3px] border-[#191919] border-solid">
                 <span className="block text-center my-0 mx-auto top-[-46px] w-[100px] relative">
@@ -233,16 +235,16 @@ const Home = () => {
                   </svg>
                 </span>
                 <h3 className="text-[20px] font-medium uppercase mb-[20px] text-center tracking-[1px] text-white leading-[1.2]">
-                  Logo Design
+                  Personal / Business Websites
                 </h3>
                 <p className="text-center text-[16px] font-medium leading-[28px] text-[#a2a2a2] mb-2.5">
-                  Nemo design enim ipsam voluptatem quim voluptas sit
-                  aspernaturaut odit auting fugit sed thisnquia consequuntur
-                  magni doloreseos designer heresm qui
+                  Online hub showcasing individual identity or business
+                  offerings, fostering connections, and sharing information
+                  effectively.
                 </p>
               </div>
             </div>
-
+            {/* UI Development */}
             <div className="transform ease-out transition hover:scale-105 duration-[0.3s]">
               <div className="relative px-[40px] pb-[40px] mt-[62px] border-[3px] border-[#191919] border-solid">
                 <span className="block text-center my-0 mx-auto top-[-46px] w-[100px] relative">
@@ -276,19 +278,18 @@ const Home = () => {
                   </svg>
                 </span>
                 <h3 className="text-[20px] font-medium uppercase mb-[20px] text-center tracking-[1px] text-white leading-[1.2]">
-                  Apps Development
+                  UI Development
                 </h3>
                 <p className="text-center text-[16px] font-medium leading-[28px] text-[#a2a2a2] mb-2.5">
-                  Nemo design enim ipsam voluptatem quim voluptas sit
-                  aspernaturaut odit auting fugit sed thisnquia consequuntur
-                  magni doloreseos designer heresm qui
+                  Creating visually appealing and user-friendly interfaces by
+                  styling elements, layouts, fonts, and colors.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
+      {/* About */}
       <section id="about" className="pt-[130px] mobile:pt-[80px]">
         <div className="container-sample">
           <div className="grid grid-cols-[58%_33%] gap-[9px] tablet:grid-cols-1 tablet:gap-[20px] mobile:gap-[20px] mobile:grid-cols-1">
@@ -311,9 +312,11 @@ const Home = () => {
 
               <div data-aos="zoom-in-down" className="about-text">
                 <p className="mb-[95px] text-[#a2a2a2] text-[16px] leading-[1.7] font-normal">
-                  Nemo design enim ipsam voluptatem quim voluptas sit aspernatur
-                  aut odit auting fugit sed thisnquia consequuntur magni dolores
-                  eos designer heresm qui ratione
+                  I am a passionate web developer dedicated to transforming
+                  ideas into impactful experiences. With a keen eye for detail
+                  and a love for innovation, I bring a unique blend of
+                  creativity and technical skills to every project. Let's
+                  collaborate and bring your vision to life!
                 </p>
                 <a
                   onMouseEnter={textEnter}
@@ -329,7 +332,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-
+      {/* Design and Innovation */}
       <section className="pt-[135px] pb-[120px] mobile:pt-[40px] mobile:pb-[80px]">
         <div className="container-sample">
           <div className="grid grid-cols-2 tablet:grid-cols-1 mobile:grid-cols-1">
@@ -342,11 +345,12 @@ const Home = () => {
                   </span>
                 </h2>
                 <p className="mt-[40px] mb-[20px] text-[#a2a2a2] font-normal text-[16px] leading-[1.7]">
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                  odit auting fugit sed thisnquia consequuntur magni dolores eos
-                  designer heresm qui ratione voluptatem sequi nesciuNeque porro
-                  quisquam est, oursqui dolorem ipsum quia dolor sit amet
-                  consectetur, adipisci velit, sed quia non numquam
+                  Navigating the world of web development while being passionate
+                  about creative design. My area of expertise is developing
+                  digital experiences that combine form and function in a
+                  seamless manner, from elegant interfaces to powerful
+                  functionality. Boost your internet visibility with innovative
+                  development and intelligent design.
                 </p>
               </div>
 
@@ -356,15 +360,16 @@ const Home = () => {
             </div>
 
             <div>
+              {/* form container */}
               <div className="form-container bg-[#09101a] p-[60px] mobile:p-[30px] pc:p-[40px] tablet:mt-[25px] mobile:mt-[25px]">
                 <h2 className="uppercase text-white text-[40px] mobile:text-[28px] mb-[25px] font-medium leading-[1.2] ">
                   Get in touch
                 </h2>
                 <p className="text-[16px] font-normal leading-[1.7] text-[#a2a2a2] mb-2.5">
-                  For your car we will do everything advice design in us repairs
-                  and maintenance We are the some preferred.
+                  Let's create something extraordinary together!
                 </p>
                 <div>
+                  {/* form */}
                   <form ref={form} onSubmit={sendEmail}>
                     <label></label>
                     <input
@@ -416,7 +421,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-
+      {/* Education and skill */}
       <section className="pt-[115px] pb-[70px] mobile:pt-[75px] mobile:pb-[30px] bg-[#09101a]">
         <div className="container-sample">
           <div className="m-auto mb-[60px]">
@@ -443,38 +448,10 @@ const Home = () => {
             <div className="grid grid-cols-2 tablet:grid-cols-1 mobile:grid-cols-1 gap-6 tablet:gap-3 mobile:gap-3">
               <div className="mb-[80px]">
                 <span className="text-[18px] inline-block border border-solid border-[#55e6a5] py-[11px] px-[24px] text-[#55e6a5] font-normal leading-[1.7]">
-                  2014 - 2018
+                  2021 - Present
                 </span>
                 <h3 className="text-[30px] font-semibold mt-[20px] mb-[10px] text-white leading-[1.2]">
-                  WordPress and End Developer
-                </h3>
-                <p className="text-[16px] font-medium text-[#a2a2a2] leading-[1.7] mb-[2.5]">
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                  odit aut fugit sed thisnquia consequuntur magni dolores eos
-                  qui ratione voluptatem
-                </p>
-              </div>
-
-              <div className="mb-[80px]">
-                <span className="text-[18px] inline-block border border-solid border-[#55e6a5] py-[11px] px-[24px] text-[#55e6a5] font-normal leading-[1.7]">
-                  2014 - 2018
-                </span>
-                <h3 className="text-[30px] font-semibold mt-[20px] mb-[10px] text-white leading-[1.2]">
-                  WordPress and End Developer
-                </h3>
-                <p className="text-[16px] font-medium text-[#a2a2a2] leading-[1.7] mb-[2.5]">
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                  odit aut fugit sed thisnquia consequuntur magni dolores eos
-                  qui ratione voluptatem
-                </p>
-              </div>
-
-              <div className="mb-[80px]">
-                <span className="text-[18px] inline-block border border-solid border-[#55e6a5] py-[11px] px-[24px] text-[#55e6a5] font-normal leading-[1.7]">
-                  2014 - 2018
-                </span>
-                <h3 className="text-[30px] font-semibold mt-[20px] mb-[10px] text-white leading-[1.2]">
-                  WordPress and End Developer
+                  Front End Developer
                 </h3>
                 <p className="text-[16px] font-medium text-[#a2a2a2] leading-[1.7] mb-[2.5]">
                   Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
@@ -570,7 +547,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-
+      {/* Projects */}
       <section id="projects" className="pt-[70px]">
         <div className="container-sample">
           <div className="pb-[80px] mobile:pb-[50px]">
