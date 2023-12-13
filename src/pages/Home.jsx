@@ -115,7 +115,7 @@ const Home = () => {
                       onMouseEnter={textEnter}
                       onMouseLeave={textLeave}
                       className="text-[2.4rem]  inline-block ease-in-out duration-[0.3s] delay-0 hover:translate-y-[-5px] hover:text-[#55e6a5]"
-                      href="https://www.linkedin.com/in/abdulwahab-lawal-0957a3286"
+                      href="https://www.linkedin.com/in/abdulwahab-lawal"
                     >
                       <FaLinkedin />
                     </a>
