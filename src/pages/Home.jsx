@@ -15,10 +15,9 @@ import useAOS from "../components/useAos";
 import emailjs from "@emailjs/browser";
 
 // framer motion
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const Home = () => {
-
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0,
@@ -71,7 +70,7 @@ const Home = () => {
         "service_iw5hv2e",
         "template_kbchu7j",
         form.current,
-        "WJMXcogEeqnfCUxGn"
+        "WJMXcogEeqnfCUxGn",
       )
       .then(
         (result) => {
@@ -80,7 +79,7 @@ const Home = () => {
         },
         (error) => {
           alert(error.message);
-        }
+        },
       );
   };
 
@@ -461,13 +460,25 @@ const Home = () => {
               {/* ECE */}
               <div className="mb-[80px]">
                 <span className="text-[18px] inline-block border border-solid border-[#55e6a5] py-[11px] px-[24px] text-[#55e6a5] font-normal leading-[1.7]">
-                  2021 - Present
+                  2021 - 2023
                 </span>
                 <h3 className="text-[30px] font-semibold mt-[20px] mb-[10px] text-white leading-[1.2]">
                   Electronic & Computer Engineering
                 </h3>
                 <p className="text-[16px] font-medium text-[#a2a2a2] leading-[1.7] mb-[2.5]">
-                  Currently studying ECE at Lagos State University.
+                  Diploma in ECE
+                </p>
+              </div>
+              {/* CS */}
+              <div className="mb-[80px]">
+                <span className="text-[18px] inline-block border border-solid border-[#55e6a5] py-[11px] px-[24px] text-[#55e6a5] font-normal leading-[1.7]">
+                  2024 - Present
+                </span>
+                <h3 className="text-[30px] font-semibold mt-[20px] mb-[10px] text-white leading-[1.2]">
+                  Computer Science
+                </h3>
+                <p className="text-[16px] font-medium text-[#a2a2a2] leading-[1.7] mb-[2.5]">
+                  Currently studying Computer Science at Lagos State University.
                 </p>
               </div>
             </div>
