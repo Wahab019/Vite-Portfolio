@@ -455,7 +455,7 @@ const Home = () => {
                   Front End Developer
                 </h3>
                 <p className="text-[16px] font-medium text-[#a2a2a2] leading-[1.7] mb-[2.5]">
-                  Front-end Web Develoment, Duromedia Academy.
+                  Front-end Web Develoment, Ascent Tech Hub.
                 </p>
               </div>
               {/* ECE */}
