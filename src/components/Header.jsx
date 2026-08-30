@@ -29,7 +29,7 @@ const Header = () => {
               <Link className="w-[180px] h-[80px]" to={"/"}>
                 <img
                   className="w-full  h-full"
-                  src={images.wahabLogo}
+                  src={images.wahabLogo2}
                   alt="logo"
                 />
               </Link>
