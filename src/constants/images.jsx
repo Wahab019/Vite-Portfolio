@@ -1,6 +1,7 @@
 // HOME PAGE IMAGES
     // WEBSITE LOGO
     import wahabLogo from "../assets/img/logo.png";
+    import wahabLogo2 from "../assets/img/wahab_transparent.png";
     
     import homeSec1img1 from "../assets/img/homeSec1img1.jpg";
     
@@ -21,6 +22,7 @@ const images = {
 
  // Home Page
   wahabLogo,
+  wahabLogo2,
   homeSec1img1,
   dangoteClone,
   uxCourse,
