@@ -237,7 +237,7 @@ const Contact = () => {
         </div>
       </section>
       {/* newsletter */}
-      <section className="bg-subscibe-pattern bg-center bg-fixed bg-cover">
+      {/* <section className="bg-subscibe-pattern bg-center bg-fixed bg-cover">
         <div className="bg-[#000000e3] pt-[115px] pb-[120px] mobile:pt-[75px] mobile:pb-[80px]">
           <div className="container-sample">
             <div className="m-auto w-[50%] tablet:w-[80%] mobile:w-full">
@@ -269,7 +269,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
