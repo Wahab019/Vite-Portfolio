@@ -46,7 +46,7 @@ const Footer = () => {
       <section className="pt-[120px] bg-[#09101a] tablet:pt-[80px] mobile:pt-[80px]">
         <div className="container-sample">
           <div className="grid grid-cols-1 pc:grid-cols-3 desktop:grid-cols-3 pc:gap-[5px] desktop:gap-[5px] gap-[50px] ">
-            <div>
+            {/* <div>
               <div className="flex flex-wrap tablet:items-start pc:items-start desktop:items-start mobile:items-center mobile:text-center mobile:justify-center">
                 <div className="footer-icon">
                   <div>
@@ -63,7 +63,9 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
+
+            <div className="mobile:hidden tablet:hidden"></div>
 
             <div>
               <div className="flex flex-wrap tablet:items-start pc:items-start desktop:items-start mobile:items-center mobile:text-center mobile:justify-center">

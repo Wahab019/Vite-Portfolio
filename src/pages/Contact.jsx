@@ -137,7 +137,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-[66.66%_32%] tablet:grid-cols-1 mobile:grid-cols-1 gap-3 tablet:gap-4 mobile:gap-4">
+            <div className="max-w-5xl mx-auto">
               {/* form */}
               <div className="">
                 <form
@@ -212,7 +212,7 @@ const Contact = () => {
                 </form>
               </div>
               {/* map */}
-              <div className="">
+              {/* <div className="">
                 <div className="w-full h-full">
                   <div className="mapouter relative text-center max-w-full h-[571px] tablet:h-[400px] mobile:h-[300px]">
                     <div className="gmap_canvas overflow-hidden bg-none max-w-full h-[571px] tablet:h-[400px] mobile:h-[300px]">
@@ -231,7 +231,7 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
