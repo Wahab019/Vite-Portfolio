@@ -18,6 +18,8 @@ import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 
 const Home = () => {
+  const [formStatus, setFormStatus] = useState("");
+  const [isSending, setIsSending] = useState(false);
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0,
@@ -64,6 +66,8 @@ const Home = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsSending(true);
+    setFormStatus("");
 
     emailjs
       .sendForm(
@@ -73,14 +77,15 @@ const Home = () => {
         "WJMXcogEeqnfCUxGn",
       )
       .then(
-        (result) => {
-          alert("Message sent successfully");
+        () => {
+          setFormStatus("Thanks, Wahab will get back to you shortly.");
           e.target.reset();
         },
         (error) => {
-          alert(error.message);
+          setFormStatus(error.message || "Something went wrong. Please try again.");
         },
-      );
+      )
+      .finally(() => setIsSending(false));
   };
 
   return (
@@ -108,13 +113,34 @@ const Home = () => {
                   specialize in translating complex ideas into user-friendly
                   interfaces that captivate and engage.
                 </p>
-                <ul className="flex list-none items-center mobile:gap-[2rem] gap-[3rem] text-[#7a7a7a]">
+                <div className="flex flex-wrap items-center gap-4 mb-[42px]">
+                  <a
+                    onMouseEnter={textEnter}
+                    onMouseLeave={textLeave}
+                    href="#projects"
+                    className="inline-flex py-[17px] px-[32px] bg-[#55e6a5] justify-center items-center text-[#02050a] font-semibold transition-all duration-[0.3s] hover:bg-white"
+                  >
+                    View Projects
+                  </a>
+                  <a
+                    onMouseEnter={textEnter}
+                    onMouseLeave={textLeave}
+                    href="#contact-home"
+                    className="inline-flex py-[16px] px-[32px] border border-solid border-[#55e6a5] justify-center items-center text-white font-semibold transition-all duration-[0.3s] hover:bg-[#55e6a5] hover:text-[#02050a]"
+                  >
+                    Hire Me
+                  </a>
+                </div>
+                <ul className="flex list-none items-center mobile:gap-[2rem] gap-[3rem] text-[#7a7a7a]" aria-label="Social links">
                   <li>
                     <a
                       onMouseEnter={textEnter}
                       onMouseLeave={textLeave}
                       className="text-[2.4rem]  inline-block ease-in-out duration-[0.3s] delay-0 hover:translate-y-[-5px] hover:text-[#55e6a5]"
                       href="https://www.linkedin.com/in/abdulwahab-lawal"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="LinkedIn profile"
                     >
                       <FaLinkedin />
                     </a>
@@ -124,7 +150,10 @@ const Home = () => {
                       onMouseEnter={textEnter}
                       onMouseLeave={textLeave}
                       className="text-[2.4rem]  inline-block ease-in-out duration-[0.3s] delay-0 hover:translate-y-[-5px] hover:text-[#55e6a5]"
-                      href="http://github.com/Wahab019"
+                      href="https://github.com/Wahab019"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="GitHub profile"
                     >
                       <FaGithub />
                     </a>
@@ -134,7 +163,10 @@ const Home = () => {
                       onMouseEnter={textEnter}
                       onMouseLeave={textLeave}
                       className="text-[2.4rem]  inline-block ease-in-out duration-[0.3s] delay-0 hover:translate-y-[-5px] hover:text-[#55e6a5]"
-                      href="http://twitter.com/theboyAA"
+                      href="https://twitter.com/theboyAA"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="X profile"
                     >
                       <FaXTwitter />
                     </a>
@@ -332,7 +364,7 @@ const Home = () => {
         </div>
       </section>
       {/* Design and Innovation */}
-      <section className="pt-[135px] pb-[120px] mobile:pt-[40px] mobile:pb-[80px]">
+      <section id="contact-home" className="pt-[135px] pb-[120px] mobile:pt-[40px] mobile:pb-[80px]">
         <div className="container-sample">
           <div className="grid grid-cols-2 tablet:grid-cols-1 mobile:grid-cols-1">
             <div>
@@ -409,10 +441,16 @@ const Home = () => {
                     <input
                       onMouseEnter={textEnter}
                       onMouseLeave={textLeave}
-                      className="form-submit-home"
+                      className="form-submit-home disabled:cursor-not-allowed disabled:opacity-60"
                       type="submit"
-                      value="submit now"
+                      value={isSending ? "sending..." : "submit now"}
+                      disabled={isSending}
                     />
+                    {formStatus && (
+                      <p className="mt-[18px] text-[15px] font-medium text-[#55e6a5]">
+                        {formStatus}
+                      </p>
+                    )}
                   </form>
                 </div>
               </div>
@@ -589,11 +627,12 @@ const Home = () => {
                 <div className="overlay absolute top-0 left-0 w-full h-full">
                   {/* project link */}
                   <div className="content1">
-                    <div class="overlay-icon">
+                    <div className="overlay-icon">
                       <a
                         href="https://dangote-clone.vercel.app/"
                         target="_blank"
-                        rel="noopener"
+                        rel="noopener noreferrer"
+                        aria-label="Open Dangote Clone live site"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -611,8 +650,13 @@ const Home = () => {
                   </div>
                   {/* github link */}
                   <div className="content2">
-                    <div class="overlay-icon">
-                      <a href="https://github.com/Duromedia-Academy/Cohort3-q2-project-2023">
+                    <div className="overlay-icon">
+                      <a
+                        href="https://github.com/Duromedia-Academy/Cohort3-q2-project-2023"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Open Dangote Clone GitHub repository"
+                      >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 496 512"
@@ -653,11 +697,12 @@ const Home = () => {
                 <div className="overlay absolute top-0 left-0 w-full h-full">
                   {/* project link */}
                   <div className="content1">
-                    <div class="overlay-icon">
+                    <div className="overlay-icon">
                       <a
                         href="https://ux-course.vercel.app/"
                         target="_blank"
-                        rel="noopener"
+                        rel="noopener noreferrer"
+                        aria-label="Open UX Course live site"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -675,8 +720,13 @@ const Home = () => {
                   </div>
                   {/* github link */}
                   <div className="content2">
-                    <div class="overlay-icon">
-                      <a href="https://github.com/Wahab019/UX-Design-Course">
+                    <div className="overlay-icon">
+                      <a
+                        href="https://github.com/Wahab019/UX-Design-Course"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Open UX Course GitHub repository"
+                      >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 496 512"
@@ -716,11 +766,12 @@ const Home = () => {
                 <div className="overlay absolute top-0 left-0 w-full h-full">
                   {/* project link */}
                   <div className="content1">
-                    <div class="overlay-icon">
+                    <div className="overlay-icon">
                       <a
                         href="https://bootstrap-portfolio-olive.vercel.app/"
                         target="_blank"
-                        rel="noopener"
+                        rel="noopener noreferrer"
+                        aria-label="Open Portfolio Template live site"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -738,8 +789,13 @@ const Home = () => {
                   </div>
                   {/* github link */}
                   <div className="content2">
-                    <div class="overlay-icon">
-                      <a href="https://github.com/Wahab019/bootstrap-portfolio">
+                    <div className="overlay-icon">
+                      <a
+                        href="https://github.com/Wahab019/bootstrap-portfolio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Open Portfolio Template GitHub repository"
+                      >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 496 512"
@@ -780,11 +836,12 @@ const Home = () => {
                 <div className="overlay absolute top-0 left-0 w-full h-full">
                   {/* project link */}
                   <div className="content1">
-                    <div class="overlay-icon">
+                    <div className="overlay-icon">
                       <a
                         href="https://wahab-dev.vercel.app/"
                         target="_blank"
-                        rel="noopener"
+                        rel="noopener noreferrer"
+                        aria-label="Open Wahab Portfolio live site"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -802,8 +859,13 @@ const Home = () => {
                   </div>
                   {/* github link */}
                   <div className="content2">
-                    <div class="overlay-icon">
-                      <a href="https://github.com/Wahab019/Vite-Portfolio">
+                    <div className="overlay-icon">
+                      <a
+                        href="https://github.com/Wahab019/Vite-Portfolio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Open Wahab Portfolio GitHub repository"
+                      >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 496 512"
