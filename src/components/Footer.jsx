@@ -1,8 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-
-// images
-import { images } from "../constants";
+import React, { useEffect, useState } from "react";
 
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,36 +6,31 @@ import { FaChevronUp, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
-// animation
-import useAOS from "../components/useAos";
-
 const Footer = () => {
+  const [scrollValue, setScrollValue] = useState(0);
+  const [showProgress, setShowProgress] = useState(false);
 
-  // go-to-top
-  let calcScrollValue = () => {
-    let scrollProgress = document.getElementById("progress");
-    let progressValue = document.getElementById("progress-value");
-    let pos = document.documentElement.scrollTop;
-    let calcHeight =
-      document.documentElement.scrollHeight -
-      document.documentElement.clientHeight;
-    let scrollValue = Math.round((pos * 100) / calcHeight);
-    if (pos > 100) {
-      scrollProgress.style.display = "grid";
-    } else {
-      scrollProgress.style.display = "none";
-    }
-    scrollProgress.addEventListener("click", () => {
-      document.documentElement.scrollTop = 0;
-    });
-    scrollProgress.style.background = `conic-gradient(#a2a2a2 ${scrollValue}%, #000000 ${scrollValue}%)`;
+  useEffect(() => {
+    const calcScrollValue = () => {
+      const pos = document.documentElement.scrollTop;
+      const calcHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      const value = calcHeight > 0 ? Math.round((pos * 100) / calcHeight) : 0;
+
+      setShowProgress(pos > 100);
+      setScrollValue(value);
+    };
+
+    calcScrollValue();
+    window.addEventListener("scroll", calcScrollValue, { passive: true });
+
+    return () => window.removeEventListener("scroll", calcScrollValue);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
-
-  window.onscroll = calcScrollValue;
-  window.onload = calcScrollValue;
-
-  // aos
-  const Aos = useAOS();
 
   return (
     <div>
@@ -126,18 +117,27 @@ const Footer = () => {
               <a
                 className="text-[30px] mr-[15px] inline-block ease-in-out duration-[0.3s] delay-0 hover:translate-y-[-5px] hover:text-[#55e6a5]"
                 href="https://www.linkedin.com/in/abdulwahab-lawal"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn profile"
               >
                 <FaLinkedin />
               </a>
               <a
                 className="text-[30px] mr-[15px] inline-block ease-in-out duration-[0.3s] delay-0 hover:translate-y-[-5px] hover:text-[#55e6a5]"
-                href="http://github.com/Wahab019"
+                href="https://github.com/Wahab019"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub profile"
               >
                 <FaGithubSquare />
               </a>
               <a
                 className="text-[30px] mr-[15px] inline-block ease-in-out duration-[0.3s] delay-0 hover:translate-y-[-5px] hover:text-[#55e6a5]"
-                href="http://twitter.com/theboyAA"
+                href="https://twitter.com/theboyAA"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X profile"
               >
                 <FaSquareXTwitter />
               </a>
@@ -147,11 +147,21 @@ const Footer = () => {
       </section>
 
       {/* go to top */}
-      <div title="Go to top" id="progress">
+      <button
+        type="button"
+        title="Go to top"
+        id="progress"
+        aria-label="Go to top"
+        onClick={scrollToTop}
+        style={{
+          display: showProgress ? "grid" : "none",
+          background: `conic-gradient(#55e6a5 ${scrollValue}%, #000000 ${scrollValue}%)`,
+        }}
+      >
         <span className="text-[#a2a2a2]" id="progress-value">
           <FaChevronUp />
         </span>
-      </div>
+      </button>
     </div>
   );
 };

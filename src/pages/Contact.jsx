@@ -11,6 +11,8 @@ import { motion } from "framer-motion";
 import useAOS from "../components/useAos";
 
 const Contact = () => {
+  const [formStatus, setFormStatus] = useState("");
+  const [isSending, setIsSending] = useState(false);
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0,
@@ -57,6 +59,8 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsSending(true);
+    setFormStatus("");
 
     emailjs
       .sendForm(
@@ -66,14 +70,15 @@ const Contact = () => {
         "WJMXcogEeqnfCUxGn"
       )
       .then(
-        (result) => {
-          alert("Message sent successfully");
+        () => {
+          setFormStatus("Thanks, Wahab will get back to you shortly.");
           e.target.reset();
         },
         (error) => {
-          alert(error.message);
+          setFormStatus(error.message || "Something went wrong. Please try again.");
         }
-      );
+      )
+      .finally(() => setIsSending(false));
   };
 
   return (
@@ -146,7 +151,7 @@ const Contact = () => {
                   className="bg-[#09101a] px-[40px] pb-[40px]"
                   action=""
                 >
-                  <div className="grid grid-cols-2 mobile:grid-cols-1">
+                  <div className="grid grid-cols-2 mobile:grid-cols-1 gap-x-[30px]">
                     <div>
                       <label></label>
                       <input
@@ -168,7 +173,7 @@ const Contact = () => {
                       />
                     </div>
                   </div>
-                  <div className="grid grid-cols-2 mobile:grid-cols-1">
+                  <div className="grid grid-cols-2 mobile:grid-cols-1 gap-x-[30px]">
                     <div>
                       <label></label>
                       <input
@@ -203,10 +208,16 @@ const Contact = () => {
                       <input
                         onMouseEnter={textEnter}
                         onMouseLeave={textLeave}
-                        className="form-submit"
+                        className="form-submit disabled:cursor-not-allowed disabled:opacity-60"
                         type="submit"
-                        value="submit now"
+                        value={isSending ? "sending..." : "submit now"}
+                        disabled={isSending}
                       />
+                      {formStatus && (
+                        <p className="mt-[18px] text-[15px] font-medium text-[#55e6a5]">
+                          {formStatus}
+                        </p>
+                      )}
                     </div>
                   </div>
                 </form>
