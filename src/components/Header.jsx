@@ -34,12 +34,15 @@ const Header = () => {
                 />
               </Link>
 
-              <div
+              <button
+                type="button"
+                aria-label="Toggle navigation menu"
+                aria-expanded={open}
                 onClick={() => setOpen(!open)}
                 className="pc:hidden text-3xl transition-all duration-[1s] desktop:hidden w-[80px] h-[80px] bg-[#55e6a5] flex justify-center items-center cursor-pointer "
               >
                 <Hamburger />
-              </div>
+              </button>
             </div>
 
             <ul
@@ -54,6 +57,7 @@ const Header = () => {
                 >
                   <a
                     href={link.link}
+                    onClick={() => setOpen(false)}
                     className="text-white font-medium hover:text-[#55e6a5] transition-all duration-[0.3s]"
                     title={link.title}
                   >
