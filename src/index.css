@@ -8,6 +8,23 @@ body{
     @apply font-garamond ;
 }
 
+body{
+    background: #02050a;
+}
+
+::selection{
+    background: #55e6a5;
+    color: #02050a;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible{
+    outline: 2px solid #55e6a5;
+    outline-offset: 4px;
+}
+
 ::-webkit-scrollbar{
     width: 10px;
 }
@@ -39,15 +56,15 @@ body{
 }
 
 .form-input{
-    @apply text-[16px] font-light w-[90%] border-b border-solid border-[#333f4d] bg-[#09101a] py-[20px] mt-[45px] outline-none text-white ;
+    @apply text-[16px] font-light w-full border-b border-solid border-[#333f4d] bg-[#09101a] py-[20px] mt-[45px] outline-none text-white transition-colors duration-300 focus:border-[#55e6a5] ;
 }
 
 .form-textarea{
-    @apply text-[16px] font-light w-[95%] border-b border-solid border-[#333f4d] bg-[#09101a] py-[20px] mt-[45px] outline-none text-white resize-none ;
+    @apply text-[16px] font-light w-full border-b border-solid border-[#333f4d] bg-[#09101a] py-[20px] mt-[45px] outline-none text-white resize-none transition-colors duration-300 focus:border-[#55e6a5] ;
 }
 
 .form-submit{
-    @apply w-[95%] mt-[35px] cursor-pointer inline-flex py-[20px] px-[40px] justify-center items-center gap-[10px] bg-[#55e6a5] text-[#02050a] font-medium hover:bg-[#141c27] hover:text-white transition-all duration-[0.3s] ;
+    @apply w-full mt-[35px] cursor-pointer inline-flex py-[20px] px-[40px] justify-center items-center gap-[10px] bg-[#55e6a5] text-[#02050a] font-medium hover:bg-[#141c27] hover:text-white transition-all duration-[0.3s] ;
 }
 
 .notify-btn{
@@ -84,11 +101,11 @@ body{
 }
 
 .form-input-home{
-    @apply mt-[30px] bg-[#09101a] border border-solid border-[#55e6a5] py-[22px] px-[20px] text-white text-[16px] font-medium w-full outline-none resize-none rounded-none  ;
+    @apply mt-[30px] bg-[#09101a] border border-solid border-[#333f4d] focus:border-[#55e6a5] py-[22px] px-[20px] text-white text-[16px] font-medium w-full outline-none resize-none rounded-none transition-colors duration-300  ;
 }
 
 .form-textarea-home{
-    @apply mt-[30px] bg-[#09101a] border border-solid border-[#55e6a5] py-[22px] px-[20px] text-white text-[16px] font-medium w-full outline-none resize-none rounded-none  ;
+    @apply mt-[30px] bg-[#09101a] border border-solid border-[#333f4d] focus:border-[#55e6a5] py-[22px] px-[20px] text-white text-[16px] font-medium w-full outline-none resize-none rounded-none transition-colors duration-300  ;
 }
 
 .form-submit-home{
